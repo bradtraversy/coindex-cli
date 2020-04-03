@@ -13,3 +13,8 @@ program
   .action(cmd => check.price(cmd));
 
 program.parse(process.argv);
+
+// If no args, output help
+if (!process.argv[2]) {
+  program.outputHelp();
+}
