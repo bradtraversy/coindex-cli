@@ -1,10 +1,10 @@
-const KeyManger = require('../lib/KeyManager');
+const KeyManager = require('../lib/KeyManager');
 const CryptoAPI = require('../lib/CryptoAPI');
 
 const check = {
   async price(cmd) {
     try {
-      keyManager = new KeyManger();
+      keyManager = new KeyManager();
       const key = keyManager.getKey();
 
       const api = new CryptoAPI(key);
